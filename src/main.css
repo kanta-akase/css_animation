@@ -1,0 +1,67 @@
+body {
+  background-color: #7fa17b;
+  margin: auto;
+  max-height: none;
+  width: 100%;
+}
+
+.conoha {
+  width: 100vw;
+  overflow: hidden;
+}
+
+img.conoha1 {
+  width: 50%;
+  height: 50%;
+  
+  animation: s1 4s linear infinite;
+  animation-delay: 2s;
+  
+}
+
+@keyframes s1 {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(100%) rotate(0deg);
+  }
+  65% {
+    transform: translateX(100%) rotate(-360deg) ;
+  }
+
+  100% {
+    transform: translateX(200%) rotate(-360deg); 
+  }
+  /* 100% {
+    transform: translateX(0%);
+  } */
+}
+
+/* @keyframes s1 {
+  0% { transform: translateX(0%);}
+  75% { transform: translateX(100%);}
+  87% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+} */
+
+
+img.conoha2 {
+  width: 5%;
+  height: 5%;
+  animation: r2 2s linear infinite;
+  margin-right: 1%;
+  margin-bottom: 5px;
+}
+
+@keyframes r2 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.footer {
+  text-align: right;
+}
